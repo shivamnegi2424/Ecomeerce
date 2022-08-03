@@ -1,0 +1,31 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "product database",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client-install":"cd client && npm install",
+    "client-build":"cd client && npm run build",
+    "heroku-postbuild":"npm run client-install && npm run client-build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/shivamnegi2424/Filpkart_Clone"
+  },
+  "author": "Shivam Negi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "formidable": "^2.0.1",
+    "https": "^1.0.0",
+    "mongoose": "^6.4.4",
+    "nodemon": "^2.0.19",
+    "uuid": "^8.3.2"
+  }
+}
