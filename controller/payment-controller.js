@@ -53,7 +53,7 @@ export const paytmResponse = (request,response) => {
 
                 post_res.on('end',function(){
                     let result = JSON.parse(res)
-                    response.redirect('')
+                    response.redirect('https://honeycodesecommerce.herokuapp.com')
                 })
             });
  
